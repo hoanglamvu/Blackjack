@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="630.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Button_Controller">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="630.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../Downloads/12282014BlackjackTable.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="EnterBet" layoutX="109.0" layoutY="218.0" prefHeight="53.0" prefWidth="172.0" text="Enter Bet" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TypeText" layoutX="60.0" layoutY="309.0" onAction="#getBet" prefHeight="25.0" prefWidth="270.0" promptText="Place bet Here" />
+      <ImageView fx:id="DealCard2" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard4" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard6" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard8" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard1" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard3" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard5" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealCard7" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard2" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard4" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard6" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard8" fitHeight="120.0" fitWidth="80.0" layoutX="235.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard1" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard3" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard5" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayCard7" fitHeight="120.0" fitWidth="80.0" layoutX="58.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="StayButton" disable="true" layoutX="166.0" layoutY="411.0" mnemonicParsing="false" onAction="#ClickStay" prefHeight="25.0" prefWidth="43.0" text="Stay" />
+      <Label fx:id="Chips" layoutX="14.0" layoutY="599.0" prefHeight="17.0" prefWidth="215.0" text="Your Chips: 200" textFill="WHITE" />
+      <Button fx:id="HitButton" disable="true" layoutX="166.0" layoutY="363.0" mnemonicParsing="false" onAction="#ClickHit" prefHeight="25.0" prefWidth="43.0" text="Hit" />
+      <ImageView fitHeight="53.0" fitWidth="75.0" layoutX="122.0" layoutY="573.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/he-gained-access-to-administrative-accounts-at-zynga-allowing-him-L1v0ip-clipart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="DisplayWin" layoutX="427.0" layoutY="379.0" prefHeight="53.0" prefWidth="156.0" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="ResetButton" layoutX="445.0" layoutY="442.0" mnemonicParsing="false" onAction="#newGame" prefHeight="25.0" prefWidth="120.0" text="Play Again?" visible="false" />
+      
+   </children>
+</AnchorPane>

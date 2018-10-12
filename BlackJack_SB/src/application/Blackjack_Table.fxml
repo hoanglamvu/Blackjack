@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Button_Controller">
+   <children>
+      <TextField fx:id="EnterName" layoutX="397.0" layoutY="338.0" onAction="#showChips" prefHeight="25.0" prefWidth="94.0" promptText="Enter Name Here" />
+      <Button fx:id="DealButton" layoutX="444.0" layoutY="376.0" mnemonicParsing="false" onAction="#ClickDeal" prefHeight="25.0" prefWidth="43.0" text="Deal" />
+      <Button fx:id="StayButton" layoutX="444.0" layoutY="454.0" mnemonicParsing="false" onAction="#ClickStay" prefHeight="25.0" prefWidth="43.0" text="Stay" />
+      <Label fx:id="PlayerCard1" layoutX="37.0" layoutY="275.0" prefHeight="17.0" prefWidth="61.0" />
+      <Label fx:id="PlayerCard2" layoutX="272.0" layoutY="275.0" prefHeight="17.0" prefWidth="75.0" />
+      <Label fx:id="DealerCard1" layoutX="37.0" layoutY="23.0" prefHeight="17.0" prefWidth="61.0" />
+      <Label fx:id="DealerCard2" layoutX="270.0" layoutY="23.0" prefHeight="17.0" prefWidth="61.0" />
+      <Label fx:id="Chips" layoutX="14.0" layoutY="466.0" prefHeight="17.0" prefWidth="215.0" />
+      <Label fx:id="showBet" layoutX="334.0" layoutY="466.0" prefHeight="17.0" prefWidth="105.0" />
+      <Button fx:id="HitButton" layoutX="444.0" layoutY="413.0" mnemonicParsing="false" onAction="#ClickHit" prefHeight="25.0" prefWidth="43.0" text="Hit" />
+      <TextField fx:id="TypeText" layoutX="397.0" layoutY="338.0" onAction="#getBet" prefHeight="25.0" prefWidth="94.0" promptText="Place bet Here" visible="false" />
+      <Label fx:id="PlayerCard3" layoutX="37.0" layoutY="321.0" />
+      <Label fx:id="PlayerCard4" layoutX="272.0" layoutY="321.0" />
+      <Label fx:id="PlayerCard5" layoutX="37.0" layoutY="367.0" />
+      <Label fx:id="PlayerCard6" layoutX="272.0" layoutY="367.0" />
+      <Label fx:id="DealerCard3" layoutX="37.0" layoutY="85.0" />
+      <Label fx:id="DealerCard5" layoutX="37.0" layoutY="149.0" />
+      <Label fx:id="DealerCard4" layoutX="272.0" layoutY="85.0" />
+      <Label fx:id="DealerCard6" layoutX="272.0" layoutY="149.0" />
+      <ImageView fx:id="Viewer" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" />
+      
+   </children>
+</AnchorPane>
